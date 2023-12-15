@@ -17,3 +17,10 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
+
+model Institution {
+  address       String?
+  id            String  @id @default(cuid())
+  instituteName String
+  phone         String?
+}
